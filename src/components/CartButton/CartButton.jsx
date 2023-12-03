@@ -1,12 +1,12 @@
 import React from "react";
-import {FaCartArrowDown} from "react-icons/fa";
+import { GrCart } from "react-icons/gr";
 import "./CartButton.css";
 
 
 const CartButton = () => {
 	return(
 		<button type="button" className="cart__button">
-			<FaCartArrowDown />
+			<GrCart />
 			<span className="cart-status">1</span>
 		</button>
 	);
