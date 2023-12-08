@@ -6,7 +6,7 @@ import Loading from "../Loading/Loading";
 import AppContext from "../Context/AppContext";
 
 
-const Products = () => {
+function Products() {
 	const { products, setProducts ,loading, setLoading} = useContext(AppContext);
 
 	useEffect(() => {
@@ -20,11 +20,11 @@ const Products = () => {
 		(loading && <Loading/>) || (
 			<section className="products container">			
 				{
-					products.map((product) => <ProductCard key={product._id} data={product} /> )
+					products.map((product) => <ProductCard key={product.id} data={product} /> )
 				}
 			</section>
 		)		
 	);
-};
+}
 
 export default Products;

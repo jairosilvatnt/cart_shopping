@@ -5,7 +5,7 @@ import AppContext from "../Context/AppContext";
 import "./SearchBar.css";
 
 
-const SearchBar = () => {
+function SearchBar() {
 	const { setProducts, setLoading } = useContext(AppContext);
 	const [searchValue, setSearchValue] = useState("");
 
@@ -35,6 +35,6 @@ const SearchBar = () => {
 			</button>
 		</form>
 	);
-};
+}
 
 export default SearchBar;
